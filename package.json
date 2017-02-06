@@ -1,0 +1,28 @@
+{
+  "name": "studio",
+  "version": "0.0.0",
+  "description": "Music studio workspace",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aristov/studio.git"
+  },
+  "keywords": [
+    "studio",
+    "music",
+    "art",
+    "business",
+    "assets",
+    "equipment",
+    "work"
+  ],
+  "author": "Vyacheslav Aristov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aristov/studio/issues"
+  },
+  "homepage": "https://github.com/aristov/studio#readme"
+}
