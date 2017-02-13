@@ -4,7 +4,8 @@
   "description": "Music studio workspace",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/aristov/studio/issues"
   },
-  "homepage": "https://github.com/aristov/studio#readme"
+  "homepage": "https://github.com/aristov/studio#readme",
+  "dependencies": {
+    "dommodule": "^0.1.0",
+    "xmldom": "^0.1.27"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
 }
