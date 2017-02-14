@@ -1,0 +1,67 @@
+<CSVDocument head="type,name,count,placement,buycost,marketcost,buydate,comment">
+    <CSVElement type="АС" name="Soundking FI040" count="4" placement="Fusion" buycost="" marketcost="1200  - 14000" buydate="01.01.2015" comment=""/>
+    <CSVElement type="АС" name="Soundking" count="2" placement="Vault 22" buycost="12000" marketcost="9000 - 11000" buydate="07.01.2015" comment=""/>
+    <CSVElement type="бас" name="Jay Turser" count="1" placement="Fusion" buycost="10000" marketcost="нужна модель" buydate="" comment=""/>
+    <CSVElement type="бас комбо" name="Hartke A100" count="1" placement="Fusion" buycost="" marketcost="3000 - 35000" buydate="01.01.2015" comment=""/>
+    <CSVElement type="бас комбо" name="Fender Rumble 100" count="1" placement="Fusion" buycost="" marketcost="22000 - 28000" buydate="01.01.2015" comment=""/>
+    <CSVElement type="бас комбо" name="Ampeg BA115 v2" count="1" placement="Fusion" buycost="34000" marketcost="30000 - 33000" buydate="2015" comment=""/>
+    <CSVElement type="бас комбо" name="PhilJonesBass Briefcase" count="1" placement="Fusion" buycost="" marketcost="40000 - 45000" buydate="" comment=""/>
+    <CSVElement type="бас комбо" name="EBS Classic Session 60" count="1" placement="Fusion" buycost="22500" marketcost="18000" buydate="30.09.2015" comment=""/>
+    <CSVElement type="гитара" name="Ibanez" count="1" placement="Fusion" buycost="" marketcost="нужна модель" buydate="01.01.2015" comment=""/>
+    <CSVElement type="комбо" name="VOX VT120+" count="1" placement="Fusion" buycost="" marketcost="20000 - 25000" buydate="01.01.2015" comment=""/>
+    <CSVElement type="комбо" name="Randall RG100" count="1" placement="Fusion" buycost="" marketcost="32000 - 35000" buydate="01.01.2015" comment=""/>
+    <CSVElement type="комбо" name="Randall RG75" count="1" placement="Fusion" buycost="" marketcost="10000 - 20000" buydate="01.01.2015" comment=""/>
+    <CSVElement type="комбо" name="Ampeg GVT5-110" count="1" placement="Fusion" buycost="33800" marketcost="нет ориентира для определения текущей стоимости" buydate="30.09.2015" comment=""/>
+    <CSVElement type="комбо" name="VOX AC15C1" count="1" placement="Fusion" buycost="42500" marketcost="35000 - 40000" buydate="" comment=""/>
+    <CSVElement type="коммутация" name="" count="" placement="Fusion" buycost="" marketcost="" buydate="" comment=""/>
+    <CSVElement type="кондиционер" name="AER" count="1" placement="Fusion" buycost="50000" marketcost="-" buydate="" comment=""/>
+    <CSVElement type="кондиционер напольный" name="Ballu" count="1" placement="Fusion" buycost="" marketcost="-" buydate="01.01.2015" comment=""/>
+    <CSVElement type="микрофон" name="Shure PG48" count="1" placement="Fusion" buycost="" marketcost="1000 - 3000" buydate="" comment=""/>
+    <CSVElement type="микрофон" name="Shure PGA48" count="1" placement="Fusion" buycost="" marketcost="1000 - 3000" buydate="" comment=""/>
+    <CSVElement type="микрофон" name="Shure PG58" count="1" placement="Fusion" buycost="" marketcost="1000 - 3000" buydate="" comment=""/>
+    <CSVElement type="микрофон" name="Shure PGA48" count="1" placement="Fusion" buycost="" marketcost="1000 - 3000" buydate="" comment=""/>
+    <CSVElement type="микрофон инструментальный" name="Shure SM57" count="1" placement="Fusion" buycost="" marketcost="нужно уточнение модели" buydate="" comment=""/>
+    <CSVElement type="набор инструментальных микрофонов" name="Shure" count="1" placement="Fusion" buycost="" marketcost="нужна модель" buydate="" comment=""/>
+    <CSVElement type="пульт" name="Mackie ProFX-8" count="1" placement="Fusion" buycost="23680" marketcost="20000 - 22000" buydate="2015" comment="3-й канал Jack-input фонит"/>
+    <CSVElement type="пульт" name="Behringer Xenyx 2442" count="1" placement="Fusion" buycost="19000" marketcost="нужно уточнение модели так как серия 2442 очень обширна" buydate="07.01.2015" comment=""/>
+    <CSVElement type="пульт активный" name="Behringer Europower" count="1" placement="Fusion" buycost="" marketcost="30000 - 35000" buydate="01.01.2015" comment=""/>
+    <CSVElement type="пюпитр хромированный" name="" count="1" placement="Fusion" buycost="" marketcost="" buydate="" comment=""/>
+    <CSVElement type="пюпитр черный" name="" count="2" placement="Fusion" buycost="" marketcost="" buydate="" comment=""/>
+    <CSVElement type="синтезатор" name="Casio" count="1" placement="Fusion" buycost="" marketcost="нужна модель" buydate="01.01.2015" comment=""/>
+    <CSVElement type="стойка гитарная" name="" count="" placement="Fusion" buycost="" marketcost="" buydate="" comment=""/>
+    <CSVElement type="стойка гитарная групповая" name="" count="1" placement="Fusion" buycost="" marketcost=""
+                buydate="" comment=""/>
+    <CSVElement type="стойка клавишная" name="" count="1" placement="Fusion" buycost="" marketcost="" buydate=""
+                comment=""/>
+    <CSVElement type="стойка клавишная двухуровневая" name="" count="1" placement="Fusion" buycost="" marketcost=""
+                buydate="" comment=""/>
+    <CSVElement type="стойка микрофонная" name="Soundking" count="" placement="Fusion" buycost="" marketcost=""
+                buydate="" comment=""/>
+    <CSVElement type="стойка под АС" name="Soundking" count="2" placement="Fusion" buycost="" marketcost=""
+                buydate="01.01.2015" comment=""/>
+    <CSVElement type="стойка под АС" name="Nordfolk" count="2" placement="Fusion" buycost="" marketcost="" buydate=""
+                comment=""/>
+    <CSVElement type="стойка под железо" name="Sonor" count="" placement="Fusion" buycost="" marketcost=""
+                buydate="01.01.2015" comment=""/>
+    <CSVElement type="стойка под комбик" name="" count="3" placement="Fusion" buycost="" marketcost="" buydate=""
+                comment=""/>
+    <CSVElement type="стул барабанный" name="Sonor" count="" placement="Fusion" buycost="" marketcost=""
+                buydate="01.01.2015" comment=""/>
+    <CSVElement type="стул клавишный" name="Proel" count="1" placement="Fusion" buycost="" marketcost="" buydate=""
+                comment=""/>
+    <CSVElement type="ударная установка" name="Sonor 3007" count="1" placement="Fusion" buycost=""
+                marketcost="нужно уточнение модели" buydate="01.01.2015" comment=""/>
+    <CSVElement type="ударная установка" name="Sonor 3007" count="1" placement="Fusion" buycost=""
+                marketcost="нужно уточнение модели" buydate="01.01.2015" comment=""/>
+    <CSVElement type="усилитель" name="Boyin BN-250" count="1" placement="Vault 22" buycost="12000"
+                marketcost="20000 - 32000" buydate="07.01.2015" comment=""/>
+    <CSVElement type="усилитель" name="Soundking AA2000P" count="1" placement="Fusion" buycost="10000"
+                marketcost="30000 - 40000" buydate="2015" comment=""/>
+    <CSVElement type="усилитель" name="Fender SPL-9000" count="1" placement="Fusion" buycost="15000"
+                marketcost="нет ориентира для определения текущей стоимости" buydate="03.08.2015" comment=""/>
+    <CSVElement type="электронное пианино" name="Yamaha P-45B" count="1" placement="Fusion" buycost="25000"
+                marketcost="28000 - 35000" buydate="" comment=""/>
+    <CSVElement type="крэш" name="Paiste 16' PST 5 Rock" count="" placement="Fusion" buycost="5000"
+                marketcost="4000 - 5000" buydate="" comment=""/>
+    <CSVElement type=""/>
+</CSVDocument>

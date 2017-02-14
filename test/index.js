@@ -1,12 +1,10 @@
-import { toXMLDOM } from '../lib/csv'
+import { CSVDocument } from '../lib/csvassembler'
 
-const document = window.document
+const root = window.document.documentElement
 
 window.fetch('data/equipment.csv')
     .then(res => res.text())
-    .then(csv => {
-        return toXMLDOM(csv)
-    })
+    .then(data => new CSVDocument({ data }))
     .then(doc => {
-        document.documentElement.replaceWith(doc.documentElement)
+        root.replaceWith(doc.documentElement)
     })
