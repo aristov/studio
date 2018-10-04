@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="rdfs2html.xsl" type="application/xml"?>
-<rdf:RDF xml:lang="en"
+<?xml-stylesheet href="studio.rdf.css"?>
+<rdf:RDF xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:vann="http://purl.org/vocab/vann/"
          xmlns:pto="http://www.productontology.org/id/"
          xmlns:studio="http://aristov.github.io/studio/ns#"
-         xml:base="http://aristov.github.io/studio/ns#">
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:xhtml="http://www.w3.org/1999/xhtml"
+         xml:lang="en">
 
     <owl:Ontology rdf:about="http://aristov.github.io/studio/ns#">
         <dc:title>Music studio ontology</dc:title>
@@ -20,24 +22,58 @@
         <vann:preferredNamespaceUri>http://aristov.github.io/studio/ns#</vann:preferredNamespaceUri>
     </owl:Ontology>
 
-    <!--General class-->
+    <owl:Property rdf:about="http://aristov.github.io/studio/ns#brandName">
+        <rdfs:label>Brand name</rdfs:label>
+        <rdfs:comment>The brand name of a subject</rdfs:comment>
+        <rdfs:domain rdf:resource="http://aristov.github.io/studio/ns#Equipment"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
+    </owl:Property>
+    <owl:Property rdf:about="http://aristov.github.io/studio/ns#modelName">
+        <rdfs:label>Model name</rdfs:label>
+        <rdfs:comment>The model name of a subject</rdfs:comment>
+        <rdfs:domain rdf:resource="http://aristov.github.io/studio/ns#Equipment"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
+    </owl:Property>
+    <owl:Property rdf:about="http://aristov.github.io/studio/ns#technicalState">
+        <rdfs:label>Technical state</rdfs:label>
+        <rdfs:comment>The technical state of a subject</rdfs:comment>
+        <rdfs:domain rdf:resource="http://aristov.github.io/studio/ns#Equipment"/>
+        <rdfs:range rdf:resource="http://aristov.github.io/studio/ns#TechnicalState"/>
+        <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
+    </owl:Property>
+    <owl:Property rdf:about="http://aristov.github.io/studio/ns#owner">
+        <rdfs:label>Owner</rdfs:label>
+        <rdfs:comment>The owner of a subject</rdfs:comment>
+        <rdfs:domain rdf:resource="http://aristov.github.io/studio/ns#Equipment"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
+    </owl:Property>
+
+    <owl:Class rdf:about="http://aristov.github.io/studio/ns#Equipment">
+        <rdfs:label>Equipment</rdfs:label>
+        <rdfs:comment>Any kind of an equipment</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
+    </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#Device">
         <rdfs:label>Device</rdfs:label>
         <rdfs:comment>Any kind of a device</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#Equipment"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
     </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#Furniture">
         <rdfs:label>Furniture</rdfs:label>
         <rdfs:comment>Any kind of a furniture</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#Equipment"/>
         <owl:sameAs rdf:resource="http://www.productontology.org/id/Furniture"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
     </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#Accessory">
         <rdfs:label>Accessory</rdfs:label>
         <rdfs:comment>Any kind of an accessory</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#Equipment"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
     </owl:Class>
 
@@ -158,6 +194,14 @@
         <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#AcousticInstrument"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
     </owl:Class>
+    <owl:Class rdf:about="http://aristov.github.io/studio/ns#Ukulele">
+        <rdfs:label>Ukulele</rdfs:label>
+        <rdfs:label xml:lang="ru">Укулеле</rdfs:label>
+        <rdfs:comment>Any kind of a ukulele</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#StringInstrument"/>
+        <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#AcousticInstrument"/>
+        <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
+    </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#Sitar">
         <rdfs:label>Sitar</rdfs:label>
         <rdfs:label xml:lang="ru">Ситар</rdfs:label>
@@ -190,7 +234,7 @@
     </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#AcousticPiano">
         <rdfs:label>Acoustic piano</rdfs:label>
-        <rdfs:comment>Any kind of a acoustic piano</rdfs:comment>
+        <rdfs:comment>Any kind of an acoustic piano</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#Piano"/>
         <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#AcousticInstrument"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
@@ -294,7 +338,7 @@
     </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#AcousticCabinet">
         <rdfs:label>Acoustic cabinet</rdfs:label>
-        <rdfs:comment>Any kind of a acoustic cabinet</rdfs:comment>
+        <rdfs:comment>Any kind of an acoustic cabinet</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#AcousticSystem"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
     </owl:Class>
@@ -336,14 +380,15 @@
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
     </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#Subwoofer">
-        <rdfs:label>Studio monitor</rdfs:label>
-        <rdfs:comment>Any kind of a studio monitor</rdfs:comment>
+        <rdfs:label>Subwoofer</rdfs:label>
+        <rdfs:comment>Any kind of a subwoofer</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#AcousticSystem"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
     </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#ActiveSubwoofer">
-        <rdfs:label>Studio monitor</rdfs:label>
-        <rdfs:comment>Any kind of a studio monitor</rdfs:comment>
+        <rdfs:label>Active subwoofer</rdfs:label>
+        <rdfs:comment>Any kind of an active subwoofer</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#Subwoofer"/>
         <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#ActiveAcousticSystem"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
     </owl:Class>
@@ -469,18 +514,18 @@
         <rdfs:comment>Any kind of a drumkit</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://aristov.github.io/studio/ns#MusicalInstrument"/>
         <rdfs:isDefinedBy rdf:resource="http://aristov.github.io/studio/ns#"/>
-        <rdfs:member rdf:resource="BassDrum"/>
-        <rdfs:member rdf:resource="SnareDrum"/>
-        <rdfs:member rdf:resource="TomTomDrum"/>
-        <rdfs:member rdf:resource="FloorTomDrum"/>
-        <rdfs:member rdf:resource="CymbalStand"/>
-        <rdfs:member rdf:resource="HiHatStand"/>
-        <rdfs:member rdf:resource="SnareStand"/>
-        <rdfs:member rdf:resource="TomHolder"/>
-        <rdfs:member rdf:resource="DrumChair"/>
-        <rdfs:member rdf:resource="DrumPedal"/>
-        <rdfs:member rdf:resource="DoubleDrumPedal"/>
-        <rdfs:member rdf:resource="Drumstick"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#BassDrum"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#SnareDrum"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#TomTomDrum"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#FloorTomDrum"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#CymbalStand"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#HiHatStand"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#SnareStand"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#TomHolder"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#DrumChair"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#DrumPedal"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#DoubleDrumPedal"/>
+        <rdfs:member rdf:resource="http://aristov.github.io/studio/ns#Drumstick"/>
     </owl:Class>
     <owl:Class rdf:about="http://aristov.github.io/studio/ns#BassDrum">
         <rdfs:label>Bass Drum</rdfs:label>
